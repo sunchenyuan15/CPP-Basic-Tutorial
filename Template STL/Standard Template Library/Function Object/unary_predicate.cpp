@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class Find_if
+class Greater_than_five
 {
 public:
     bool operator()(int value)
@@ -20,7 +20,7 @@ void test()
     {
         vec.push_back(i);
     }
-    vector<int>::iterator it = find_if(vec.begin(), vec.end(), Find_if());    //Find() 匿名函数对象
+    vector<int>::iterator it = find_if(vec.begin(), vec.end(), Greater_than_five());    //Greater_than_five() 匿名函数对象
     if (it != vec.end())
     {
         cout << (*it) << endl;
