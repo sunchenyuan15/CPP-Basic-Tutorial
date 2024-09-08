@@ -30,8 +30,7 @@ void sort_arr(T arr[], int len)
             swap_arr(arr[min], arr[i]);
         }
         
-    }
-    
+    }    
 }
 
 template<typename T>
